@@ -1,0 +1,36 @@
+\\Layout
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Main.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        Header
+    </header>
+    <nav>
+        Meunu
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>
+
+\\Index
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/HomeLayout.cshtml";
+}
+
+<div id="content">
+    <div id="right-control">Right Control</div>
+    <div id="content-main">Content Main</div>
+    <div id="left-control">Left Control</div>
+</div>
